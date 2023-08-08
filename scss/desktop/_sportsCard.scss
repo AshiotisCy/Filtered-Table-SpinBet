@@ -1,0 +1,116 @@
+.sports-card-wrapper,
+.sports-card-wrapper-mobile {
+    width: 650px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: $card-bg;
+    color: $white;
+    padding: 30px;
+    text-align: center;
+    gap: 30px;
+    align-items: center;
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        gap: 10px;
+
+        .country {
+            width: 100%;
+            text-transform: uppercase;
+        }
+
+        .competition {
+            font-size: 28px;
+        }
+
+        .finished {
+            text-transform: uppercase;
+            color: $game-status;
+        }
+
+        .inprogress {
+            text-transform: uppercase;
+            color: $yellow;
+        }
+
+        .canceled {
+            text-transform: uppercase;
+            color: $pink;
+        }
+    }
+
+    .body {
+        display: flex;
+        width: 100%;
+        max-width: 400px;
+        justify-content: center;
+        align-items: center;
+        font-size: 75px;
+        gap: 20px;
+
+        .home,
+        .separator,
+        .away {
+            flex: 1 0;
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 28px;
+        width: 100%;
+
+        .home-team,
+        .match-status,
+        .away-team {
+            width: 33%;
+        }
+
+        .match-status,
+        .full-time {
+            border: 1px solid;
+            padding: 20px;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+        }
+
+        .full-time{
+            color: $game-status;
+            border: 1px solid $game-status;
+        }
+    }
+}
+
+.sports-card-wrapper-mobile {
+    width: 100%;
+    height: 100%;
+
+    .header {
+
+        .country {
+            font-size: 18px;
+        }
+
+        .competition {
+            font-size: 22px;
+        }
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        font-size: 22px;
+
+        .home-team,
+        .circle-container,
+        .away-team {
+            width: 100%;
+        }
+    }
+}
